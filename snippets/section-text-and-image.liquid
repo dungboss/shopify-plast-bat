@@ -39,6 +39,10 @@
   assign layout = layout | default: section.settings.layout | default: 'right'
   assign image_width = image_width | default: section.settings.image_width | default: '50'
   assign image = image | default: section.settings.image
+  if image == blank and product != blank
+    assign _img_index = section.settings.product_image_index | default: 0
+    assign image = product.images[_img_index]
+  endif
   assign image_mask = image_mask | default: section.settings.image_mask | default: 'none'
   assign image2 = image2 | default: section.settings.image2
   assign image2_mask = image2_mask | default: section.settings.image2_mask | default: 'none'

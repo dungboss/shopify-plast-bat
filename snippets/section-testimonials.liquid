@@ -17,6 +17,9 @@
   assign align_text = align_text | default: section.settings.align_text | default: 'center'
   assign round_images = round_images | default: section.settings.round_images, allow_false: true | default: true, allow_false: true
   assign title = title | default: section.settings.title
+  assign subtitle = subtitle | default: section.settings.subtitle | default: blank
+  assign show_top_stars = section.settings.show_top_stars | default: false
+  assign layout_style = section.settings.layout_style | default: 'slider'
   assign color_scheme = color_scheme | default: section.settings.color_scheme
   assign hydration = hydration | default: 'on:idle'
 
@@ -26,100 +29,234 @@
   endunless
 -%}
 
-<is-land {{ hydration }}>
-  <testimonials-component
-    class="testimonials-section testimonials-{{ section.id }} text-{{ align_text }} color-scheme-{{ color_scheme }}"
-    section-id="{{ section.id }}"
-  >
+{%- if layout_style == 'grid' -%}
+  {%- comment -%} Card grid layout {%- endcomment -%}
+  <div class="testimonials-grid-section testimonials-{{ section.id }} color-scheme-{{ color_scheme }}">
     {%- if color_scheme != 'none' -%}
       {%- render 'color-scheme-texture', color_scheme: color_scheme -%}
     {%- endif -%}
-
-    {%- if title != blank -%}
-      <div class="page-width">
-        <div class="section-header">
+    <div class="page-width">
+      <div class="testimonials-grid__header text-{{ align_text }}">
+        {%- if show_top_stars -%}
+          <div class="testimonials-grid__top-stars">★★★★★</div>
+        {%- endif -%}
+        {%- if title != blank -%}
           <h2>{{ title | escape }}</h2>
-        </div>
+        {%- endif -%}
+        {%- if subtitle != blank -%}
+          <p class="testimonials-grid__subtitle">{{ subtitle | escape }}</p>
+        {%- endif -%}
       </div>
-    {%- endif -%}
-
-    {%- if section.blocks.size > 0 -%}
-      <div class="slideshow-wrapper">
-        <div
-          class="testimonials-slider"
-          id="Testimonials-{{ section.id }}"
-          data-dots="true"
-          data-count="{{ section.blocks.size }}"
-        >
+      {%- if section.blocks.size > 0 -%}
+        <div class="testimonials-grid">
           {%- for block in section.blocks -%}
-            <div
-              class="testimonials-slide testimonials-slide--{{ block.id }}"
-              data-index="{{ forloop.index0 }}"
-              {{ block.shopify_attributes }}
-            >
-              <blockquote class="testimonials-slider__text">
-                {%- if block.settings.icon == 'quote' -%}
-                  <span class="quote-icon">{% render 'icon', name: 'quote' %}</span>
-                {%- elsif block.settings.icon == '5-stars' -%}
-                  <span class="testimonial-stars">★★★★★</span>
-                {%- elsif block.settings.icon == '4-stars' -%}
-                  <span class="testimonial-stars">★★★★</span>
-                {%- elsif block.settings.icon == '3-stars' -%}
-                  <span class="testimonial-stars">★★★</span>
-                {%- elsif block.settings.icon == '2-stars' -%}
-                  <span class="testimonial-stars">★★</span>
-                {%- elsif block.settings.icon == '1-star' -%}
-                  <span class="testimonial-stars">★</span>
-                {%- endif -%}
-
-                {%- if block.settings.testimonial != blank -%}
-                  <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
-                {%- endif -%}
-
-                {%- if block.settings.image != blank -%}
-                  <div class="testimonial-image{% if round_images %} testimonial-image--round{% endif %}">
-                    <div
-                      class="image-wrap text-spacing"
-                      {% if round_images == false %}
-                        style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
-                      {% endif %}
-                    >
-                      {%- liquid
-                        if round_images
-                          assign sizeVariable = '65px'
-                        else
-                          assign sizeVariable = '142px'
-                        endif
-
-                        assign fallback = sizeVariable
-                      -%}
-                      {%- render 'image-element',
-                        img: block.settings.image,
-                        sizeVariable: sizeVariable,
-                        fallback: fallback,
-                        widths: '180, 360, 540, 720'
-                      -%}
-                    </div>
-                  </div>
-                {%- endif -%}
-
-                {%- if block.settings.author != blank -%}
-                  <cite>{{ block.settings.author | escape }}</cite>
-                {%- endif -%}
-                {%- if block.settings.author_info != blank -%}
-                  <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
-                {%- endif -%}
-              </blockquote>
+            <div class="testimonials-grid__card" {{ block.shopify_attributes }}>
+              <div class="testimonials-grid__card-author">
+                <strong>{{ block.settings.author | escape }}</strong>
+              </div>
+              {%- if block.settings.author_info != blank -%}
+                <div class="testimonials-grid__card-verified">
+                  <span class="testimonials-grid__check">✓</span>
+                  {{ block.settings.author_info | escape }}
+                </div>
+              {%- endif -%}
+              <div class="testimonials-grid__card-stars">
+                {%- liquid
+                  case block.settings.icon
+                    when '5-stars'
+                      echo '★★★★★'
+                    when '4-stars'
+                      echo '★★★★'
+                    when '3-stars'
+                      echo '★★★'
+                    when '2-stars'
+                      echo '★★'
+                    when '1-star'
+                      echo '★'
+                  endcase
+                -%}
+              </div>
+              {%- if block.settings.testimonial != blank -%}
+                <div class="testimonials-grid__card-text rte-setting">{{ block.settings.testimonial }}</div>
+              {%- endif -%}
             </div>
           {%- endfor -%}
         </div>
-      </div>
-    {%- endif -%}
-  </testimonials-component>
+      {%- endif -%}
+    </div>
+  </div>
 
-  <template data-island>
-    <script type="module">
-      import 'components/section-testimonials'
-    </script>
-  </template>
-</is-land>
+  {% style %}
+    #shopify-section-{{ section.id }} .testimonials-grid-section {
+      padding: 48px 0;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__header {
+      margin-bottom: 32px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__top-stars {
+      font-size: 28px;
+      color: #f5a623;
+      margin-bottom: 8px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__header h2 {
+      margin: 0 0 8px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__subtitle {
+      color: #666;
+      font-size: 16px;
+      margin: 0;
+    }
+    /* Masonry-style grid using CSS columns */
+    #shopify-section-{{ section.id }} .testimonials-grid {
+      columns: 5;
+      column-gap: 16px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__card {
+      break-inside: avoid;
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: inline-block;
+      width: 100%;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__card-author {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__card-verified {
+      font-size: 13px;
+      color: #1a73e8;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__check {
+      font-weight: bold;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__card-stars {
+      color: #f5a623;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    #shopify-section-{{ section.id }} .testimonials-grid__card-text {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+    /* Tablet */
+    @media (max-width: 1024px) {
+      #shopify-section-{{ section.id }} .testimonials-grid {
+        columns: 3;
+      }
+    }
+    /* Mobile */
+    @media (max-width: 640px) {
+      #shopify-section-{{ section.id }} .testimonials-grid {
+        columns: 1;
+      }
+    }
+  {% endstyle %}
+
+{%- else -%}
+  {%- comment -%} Original slider layout {%- endcomment -%}
+  <is-land {{ hydration }}>
+    <testimonials-component
+      class="testimonials-section testimonials-{{ section.id }} text-{{ align_text }} color-scheme-{{ color_scheme }}"
+      section-id="{{ section.id }}"
+    >
+      {%- if color_scheme != 'none' -%}
+        {%- render 'color-scheme-texture', color_scheme: color_scheme -%}
+      {%- endif -%}
+
+      {%- if title != blank -%}
+        <div class="page-width">
+          <div class="section-header">
+            <h2>{{ title | escape }}</h2>
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="slideshow-wrapper">
+          <div
+            class="testimonials-slider"
+            id="Testimonials-{{ section.id }}"
+            data-dots="true"
+            data-count="{{ section.blocks.size }}"
+          >
+            {%- for block in section.blocks -%}
+              <div
+                class="testimonials-slide testimonials-slide--{{ block.id }}"
+                data-index="{{ forloop.index0 }}"
+                {{ block.shopify_attributes }}
+              >
+                <blockquote class="testimonials-slider__text">
+                  {%- if block.settings.icon == 'quote' -%}
+                    <span class="quote-icon">{% render 'icon', name: 'quote' %}</span>
+                  {%- elsif block.settings.icon == '5-stars' -%}
+                    <span class="testimonial-stars">★★★★★</span>
+                  {%- elsif block.settings.icon == '4-stars' -%}
+                    <span class="testimonial-stars">★★★★</span>
+                  {%- elsif block.settings.icon == '3-stars' -%}
+                    <span class="testimonial-stars">★★★</span>
+                  {%- elsif block.settings.icon == '2-stars' -%}
+                    <span class="testimonial-stars">★★</span>
+                  {%- elsif block.settings.icon == '1-star' -%}
+                    <span class="testimonial-stars">★</span>
+                  {%- endif -%}
+
+                  {%- if block.settings.testimonial != blank -%}
+                    <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
+                  {%- endif -%}
+
+                  {%- if block.settings.image != blank -%}
+                    <div class="testimonial-image{% if round_images %} testimonial-image--round{% endif %}">
+                      <div
+                        class="image-wrap text-spacing"
+                        {% if round_images == false %}
+                          style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
+                        {% endif %}
+                      >
+                        {%- liquid
+                          if round_images
+                            assign sizeVariable = '65px'
+                          else
+                            assign sizeVariable = '142px'
+                          endif
+                          assign fallback = sizeVariable
+                        -%}
+                        {%- render 'image-element',
+                          img: block.settings.image,
+                          sizeVariable: sizeVariable,
+                          fallback: fallback,
+                          widths: '180, 360, 540, 720'
+                        -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+
+                  {%- if block.settings.author != blank -%}
+                    <cite>{{ block.settings.author | escape }}</cite>
+                  {%- endif -%}
+                  {%- if block.settings.author_info != blank -%}
+                    <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
+                  {%- endif -%}
+                </blockquote>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </testimonials-component>
+
+    <template data-island>
+      <script type="module">
+        import 'components/section-testimonials'
+      </script>
+    </template>
+  </is-land>
+{%- endif -%}

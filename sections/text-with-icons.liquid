@@ -11,6 +11,28 @@
       "label": "t:labels.heading"
     },
     {
+      "type": "checkbox",
+      "id": "show_center_image",
+      "label": "Show center image",
+      "info": "Splits blocks into 2 columns with image in the middle. Works best with 4 blocks.",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "center_image",
+      "label": "Center image"
+    },
+    {
+      "type": "range",
+      "id": "center_image_product_index",
+      "label": "Product image index (fallback)",
+      "info": "Used when no image selected above. 0 = first product image.",
+      "min": 0,
+      "max": 9,
+      "step": 1,
+      "default": 1
+    },
+    {
       "type": "select",
       "id": "align_text",
       "label": "t:labels.text_alignment",

@@ -1,1 +1,509 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"vendor_enable":false,"sku_enable":false}},"price":{"type":"price","settings":{}},"inventory_status":{"type":"inventory_status","disabled":true,"settings":{"inventory_threshold":10,"inventory_transfers_enable":true}},"variant_picker":{"type":"variant_picker","settings":{"variant_labels":true,"picker_type":"button","product_dynamic_variants_enable":true,"color_swatches":false}},"sales_point":{"type":"sales_point","disabled":true,"settings":{"icon":"globe","text":"Free worldwide shipping"}},"sales_point2":{"type":"sales_point","disabled":true,"settings":{"icon":"truck","text":"Free returns"}},"sales_point3":{"type":"sales_point","disabled":true,"settings":{"icon":"leaf","text":"Carbon neutral"}},"sales_point4":{"type":"sales_point","disabled":true,"settings":{"icon":"lock","text":"Secure payments"}},"quantity_selector_WnGzq4":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"surface_pickup_enable":false,"show_gift_card_recipient":false}},"description_PigjrR":{"type":"description","settings":{"is_tab":true}},"tab_YptbEy":{"type":"tab","settings":{"title":"Shipping information","content":"<p>We offer fast and reliable worldwide shipping.<br\/><br\/>• <strong>US orders:<\/strong> Delivered in <strong>5–7 business days<\/strong><br\/>• <strong>International orders:<\/strong> Delivered in <strong>10–15 business days<\/strong><br\/><br\/>All orders include tracking, and you’ll receive updates as soon as your package ships.<\/p>","page":""}}},"block_order":["title","price","inventory_status","variant_picker","sales_point","sales_point2","sales_point3","sales_point4","quantity_selector_WnGzq4","buy_buttons","description_PigjrR","tab_YptbEy"],"settings":{"image_position":"left","image_container_size":"medium","product_image_size":"square","product_zoom_enable":true,"thumbnail_position":"beside","thumbnail_height":"fixed","thumbnail_arrows":false,"mobile_layout":"full","enable_video_looping":true,"product_video_style":"unmuted"}},"sub":{"type":"product-full-width","blocks":{"description":{"type":"description","settings":{"is_tab":true}},"tab_UHNpQC":{"type":"tab","settings":{"title":"Shipping information","content":"<p><br\/>We offer fast and reliable worldwide shipping.<br\/><br\/>• <strong>US orders:<\/strong> Delivered in <strong>5–7 business days<\/strong><br\/>• <strong>International orders:<\/strong> Delivered in <strong>10–15 business days<\/strong><br\/><br\/>All orders include tracking, and you’ll receive updates as soon as your package ships.<\/p>","page":""}}},"block_order":["description","tab_UHNpQC"],"disabled":true,"settings":{"max_width":true}},"recommendations":{"type":"product-recommendations","settings":{"product_recommendations_heading":"You may also like","related_count":6,"products_per_row":3}},"more-products-vendor":{"type":"more-products-vendor","disabled":true,"settings":{"products_per_row":3,"max_products":5}},"more-products-collection":{"type":"more-products-collection","disabled":true,"settings":{"products_per_row":3,"max_products":5}},"recently-viewed":{"type":"recently-viewed","settings":{}},"collection-return":{"type":"collection-return","settings":{"color_scheme":"none"}}},"order":["main","sub","recommendations","more-products-vendor","more-products-collection","recently-viewed","collection-return"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "vendor_enable": false,
+            "sku_enable": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_PigjrR": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "quantity_selector_WnGzq4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Fast Shipping"
+          }
+        },
+        "sales_point2": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "box",
+            "text": "Free Returns"
+          }
+        },
+        "sales_point3": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "lock",
+            "text": "30-Day Money Back Guarantee"
+          }
+        },
+        "tab_YptbEy": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping Information",
+            "content": "<p>We offer fast and reliable worldwide shipping.<br\/><br\/>• <strong>US orders:<\/strong> Delivered in <strong>5–7 business days<\/strong><br\/>• <strong>International orders:<\/strong> Delivered in <strong>10–15 business days<\/strong><br\/><br\/>All orders include tracking, and you'll receive updates as soon as your package ships.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_returns": {
+          "type": "tab",
+          "settings": {
+            "title": "Return Policy",
+            "content": "<p>We offer free returns within 30 days of purchase. If you're not completely satisfied with your GlowRelief Cupping Massager, contact us for a full refund — no questions asked.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "description_PigjrR",
+        "variant_picker",
+        "quantity_selector_WnGzq4",
+        "buy_buttons",
+        "sales_point",
+        "sales_point2",
+        "sales_point3",
+        "tab_YptbEy",
+        "tab_returns"
+      ],
+      "settings": {
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": false,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "unmuted"
+      }
+    },
+    "stiff-shoulders": {
+      "type": "text-and-image",
+      "settings": {
+        "title": "Stiff shoulders and tight back after work",
+        "text": "<p>Use targeted red light heat and adjustable suction to melt away tension at home. Within minutes feel looser muscles, reduced stiffness, and less nightly pain so you can sleep and move more freely.<\/p>",
+        "button_label": "Get Mine Now",
+        "button_link": "",
+        "button_style": "primary",
+        "layout": "left",
+        "image_width": "50",
+        "align_text": "left",
+        "color_scheme": "none",
+        "top_padding": true,
+        "bottom_padding": true,
+        "product_image_index": 0
+      }
+    },
+    "feel-calmer": {
+      "type": "text-with-icons",
+      "blocks": {
+        "deep-heat": {
+          "type": "text_block",
+          "settings": {
+            "icon": "fire",
+            "title": "Deep Heat",
+            "text": "<p>Penetrates sore tissue to ease tight muscles quickly.<\/p>"
+          }
+        },
+        "red-light": {
+          "type": "text_block",
+          "settings": {
+            "icon": "circle",
+            "title": "Red Light",
+            "text": "<p>Boosts circulation for faster recovery and smoother skin.<\/p>"
+          }
+        },
+        "custom-suction": {
+          "type": "text_block",
+          "settings": {
+            "icon": "person",
+            "title": "Custom Suction",
+            "text": "<p>Adjustable vacuum fits sensitive to firm areas safely.<\/p>"
+          }
+        },
+        "portable": {
+          "type": "text_block",
+          "settings": {
+            "icon": "leaf",
+            "title": "Portable",
+            "text": "<p>Rechargeable battery lets you use therapy anytime.<\/p>"
+          }
+        }
+      },
+      "block_order": ["deep-heat", "red-light", "custom-suction", "portable"],
+      "settings": {
+        "title": "Feel calmer, move easier, and glow with confidence",
+        "align_text": "center",
+        "desktop_columns_per_row": 2,
+        "divider": false,
+        "show_center_image": true,
+        "center_image_product_index": 1
+      }
+    },
+    "comparison": {
+      "type": "advanced-content",
+      "blocks": {
+        "comparison-table": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"overflow-x:auto;\"><table style=\"width:100%;border-collapse:collapse;text-align:center;\"><thead><tr><th style=\"padding:12px;border-bottom:2px solid #eee;\">Feature<\/th><th style=\"padding:12px;border-bottom:2px solid #eee;background:#000;color:#fff;\">GlowRelief Cupping Massager<\/th><th style=\"padding:12px;border-bottom:2px solid #eee;\">Cupping Massage<\/th><th style=\"padding:12px;border-bottom:2px solid #eee;\">Typical Massager<\/th><\/tr><\/thead><tbody><tr><td style=\"padding:12px;border-bottom:1px solid #eee;text-align:left;\">LED Red Light Therapy<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✓<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><\/tr><tr><td style=\"padding:12px;border-bottom:1px solid #eee;text-align:left;\">12-Level Heat Settings<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✓<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><\/tr><tr><td style=\"padding:12px;border-bottom:1px solid #eee;text-align:left;\">12-Level Negative Pressure<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✓<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><\/tr><tr><td style=\"padding:12px;border-bottom:1px solid #eee;text-align:left;\">Smart Timer Protection<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✓<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><td style=\"padding:12px;border-bottom:1px solid #eee;\">✗<\/td><\/tr><tr><td style=\"padding:12px;text-align:left;\">Portable &amp; Rechargeable<\/td><td style=\"padding:12px;\">✓<\/td><td style=\"padding:12px;\">✗<\/td><td style=\"padding:12px;\">partial<\/td><\/tr><\/tbody><\/table><\/div>",
+            "width": "full"
+          }
+        }
+      },
+      "block_order": ["comparison-table"],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "led-light": {
+      "type": "text-and-image",
+      "settings": {
+        "title": "LED Red Light Heat Therapy",
+        "text": "<p>Advanced 12V-5W LED red light technology penetrates deep into muscle tissue to stimulate circulation, reduce inflammation, and accelerate healing. Combined with 12 levels of heat and adjustable suction for complete therapy control.<\/p>",
+        "layout": "left",
+        "image_width": "50",
+        "align_text": "left",
+        "color_scheme": "none",
+        "top_padding": true,
+        "bottom_padding": true,
+        "product_image_index": 2
+      }
+    },
+    "small-time-big-relief": {
+      "type": "text-with-icons",
+      "blocks": {
+        "stat1": {
+          "type": "text_block",
+          "settings": {
+            "title": "Reported that muscles tightened overall after just a single use.",
+            "text": "<p><\/p>"
+          }
+        },
+        "stat2": {
+          "type": "text_block",
+          "settings": {
+            "title": "Experienced improved skin smoothness after consistent use.",
+            "text": "<p><\/p>"
+          }
+        },
+        "stat3": {
+          "type": "text_block",
+          "settings": {
+            "title": "Noticed faster muscle recovery and less soreness.",
+            "text": "<p><\/p>"
+          }
+        }
+      },
+      "block_order": ["stat1", "stat2", "stat3"],
+      "settings": {
+        "title": "Small time, big relief; notice real change fast",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "divider": false
+      }
+    },
+    "cordless-portable": {
+      "type": "text-and-image",
+      "settings": {
+        "title": "Cordless Portable Design",
+        "text": "<p>Take your therapy anywhere — no cords, no outlet needed. The built-in rechargeable battery delivers up to 90 minutes of continuous use so you can relieve tension at home, at work, or while traveling.<\/p>",
+        "button_label": "Get Mine Now",
+        "button_link": "",
+        "button_style": "primary",
+        "layout": "right",
+        "image_width": "50",
+        "align_text": "left",
+        "color_scheme": "none",
+        "top_padding": true,
+        "bottom_padding": true,
+        "product_image_index": 3
+      }
+    },
+    "embarrassing-cellulite": {
+      "type": "text-and-image",
+      "settings": {
+        "title": "Embarrassing cellulite and poor circulation",
+        "text": "<p>Combine red light and heat therapy to improve blood flow and skin firmness. Regular short sessions help reduce the appearance of cellulite and give you more confidence in your own skin.<\/p>",
+        "button_label": "Get Mine Now",
+        "button_link": "",
+        "button_style": "primary",
+        "layout": "right",
+        "image_width": "50",
+        "align_text": "left",
+        "color_scheme": "none",
+        "top_padding": true,
+        "bottom_padding": true,
+        "product_image_index": 4
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "title": "Is the cupping painful for beginners?",
+            "text": "<p>No. The device has 12 adjustable suction levels so beginners can start at the lowest setting and gradually increase as they get comfortable with the sensation.<\/p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "title": "How long is a typical session?",
+            "text": "<p>Most users get great results with 10–15 minute sessions per area. The built-in smart timer helps you stay consistent and safe.<\/p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use it on sensitive skin?",
+            "text": "<p>Yes. The adjustable suction and heat levels make it suitable for sensitive skin. Start at lower settings and apply a thin layer of massage oil before use for best results.<\/p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "title": "How long does the battery last between charges?",
+            "text": "<p>The rechargeable battery provides approximately 60–90 minutes of continuous use per full charge, depending on the suction and heat levels used.<\/p>"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4"],
+      "settings": {
+        "title": "Common Questions About GlowRelief Therapy",
+        "heading_size": "h2"
+      }
+    },
+    "guarantee": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "30-Day Money-Back Guarantee on GlowRelief Cupping Massager",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Try GlowRelief risk-free for 30 days. If you don't feel reduced tension, clearer skin texture, or improved comfort, return it for a full refund. We stand behind real heat therapy, not empty promises.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "testimonials-main": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Affordable alternative to clinic sessions, effective for detox and soreness, though it can leave faint marks if suction is high.<\/p>",
+            "author": "Lily F.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>The one-button release saved me from awkward tugging, and the heat combined with suction made my chronic back pain noticeably better.<\/p>",
+            "author": "Scarlett N.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "3-stars",
+            "testimonial": "<p>Easy to use, good heat levels, feels like real therapy.<\/p>",
+            "author": "Isabella K.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Compact and cordless so I use it on the couch or in bed; the suction levels let me target stubborn knots without bruising.<\/p>",
+            "author": "Ella V.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t5": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Love it! ❤️<\/p>",
+            "author": "Emma S.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t6": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Was nervous at first but it's gentle enough for beginners and powerful enough for deep tissue relief.<\/p>",
+            "author": "Chloe W.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t7": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Great for a weekly self-care routine, sliding it across tight muscles after a long day at work is incredibly satisfying.<\/p>",
+            "author": "Abigail P.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t8": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "testimonial": "<p>Helped my neck and shoulder knots after desk work; timer prevents overdoing it and the removal button is genius.<\/p>",
+            "author": "Harper J.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "t9": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "3-stars",
+            "testimonial": "<p>So relaxing after long days.<\/p>",
+            "author": "Sophia M.",
+            "author_info": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"],
+      "settings": {
+        "title": "Real users love it",
+        "subtitle": "Trusted feedback from buyers",
+        "show_top_stars": true,
+        "layout_style": "grid",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "none"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Recommended Products",
+        "related_count": 6,
+        "products_per_row": 3
+      }
+    },
+    "more-testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "mt1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Best purchase I've made this year. The device is well-built and works exactly as described. My back pain is gone.<\/p>",
+            "author": "Oliver K.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "mt2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Love this product. I use it on my neck and shoulders and feel instant relief. The red light and heat together are so effective.<\/p>",
+            "author": "Emma T.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "mt3": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I use it every evening after work and it has completely changed how I feel. No more stiff mornings.<\/p>",
+            "author": "Sophia L.",
+            "author_info": "Verified Buyer"
+          }
+        },
+        "mt4": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Really helps with cellulite and poor circulation on my legs. Noticeably smoother skin after 2 weeks of regular use.<\/p>",
+            "author": "James W.",
+            "author_info": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": ["mt1", "mt2", "mt3", "mt4"],
+      "settings": {
+        "title": "Let customers speak for us",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "none"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {}
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+        "color_scheme": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "stiff-shoulders",
+    "feel-calmer",
+    "comparison",
+    "led-light",
+    "small-time-big-relief",
+    "cordless-portable",
+    "embarrassing-cellulite",
+    "faq",
+    "guarantee",
+    "testimonials-main",
+    "recommendations",
+    "more-testimonials",
+    "recently-viewed",
+    "collection-return"
+  ]
+}
