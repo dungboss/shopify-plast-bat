@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; json.load\\(open\\('/Users/macbook/dev/shopify/shopify-plast-bat/templates/product.json'\\)\\); print\\('Valid JSON - no syntax errors'\\)\")",
+      "Bash(python3 -c \"import json; data=json.load\\(open\\('/Users/macbook/dev/shopify/shopify-plast-bat/release-manifest.json'\\)\\); print\\(list\\(data.keys\\(\\)\\)[:10]\\)\")",
+      "Bash(python3 -c \"import json; json.load\\(open\\('/Users/macbook/dev/shopify/shopify-plast-bat/templates/product.json'\\)\\); print\\('OK'\\)\")",
+      "Bash(python3 -c ':*)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('/Users/macbook/dev/shopify/shopify-plast-bat/templates/product.json'\\)\\); print\\('JSON valid'\\)\")"
+    ]
+  }
+}
