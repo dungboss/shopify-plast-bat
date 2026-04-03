@@ -281,6 +281,7 @@
     },
     "cordless-portable": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "product_image_index": 3,
         "image_mask": "none",
@@ -303,6 +304,7 @@
     },
     "embarrassing-cellulite": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "product_image_index": 4,
         "image_mask": "none",
@@ -361,6 +363,7 @@
         "q3",
         "q4"
       ],
+      "disabled": true,
       "settings": {
         "title": "Common Questions About GlowRelief Therapy",
         "heading_size": "h2",
