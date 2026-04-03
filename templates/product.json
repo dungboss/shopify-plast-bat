@@ -178,6 +178,7 @@
         "custom-suction",
         "portable"
       ],
+      "disabled": true,
       "settings": {
         "title": "Feel calmer, move easier, and glow with confidence",
         "show_center_image": true,
@@ -205,6 +206,7 @@
       "block_order": [
         "comparison-table"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -387,6 +389,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "center",
         "narrow_column": true,
@@ -490,6 +493,7 @@
         "t8",
         "t9"
       ],
+      "disabled": true,
       "settings": {
         "title": "Real users love it",
         "subtitle": "Trusted feedback from buyers",
