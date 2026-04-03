@@ -134,7 +134,7 @@
       "type": "scrolling-text",
       "name": "t:labels.scrolling_text",
       "settings": {
-        "text": "Free shipping and returns",
+        "text": "Free shipping with order over $79",
         "link": "",
         "text_size": 20,
         "text_spacing": true,
