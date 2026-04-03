@@ -225,7 +225,7 @@
         "text_block_EQGrte": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "gift",
             "title": "Personalized, Just For You",
             "text": "<p>Let every gift resonate with<br/>the uniqueness of your bond.</p>"
           }
@@ -241,7 +241,7 @@
         "stat2": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "ribbon",
             "title": "You're Our Priority",
             "text": "<p>Enjoy our 30-day unconditionalrefund& replacement guarantee.</p>"
           }
@@ -250,8 +250,8 @@
           "type": "text_block",
           "settings": {
             "icon": "chat",
-            "title": "Noticed faster muscle recovery and less soreness.",
-            "text": "<p></p>"
+            "title": "Here For You, Always",
+            "text": "<p>From helping hands to heartwarmingchats,we're here for you.</p>"
           }
         }
       },
