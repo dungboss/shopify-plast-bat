@@ -81,6 +81,20 @@
             "page": ""
           }
         },
+        "size_chart_jYXNKT": {
+          "type": "size_chart",
+          "settings": {
+            "size_chart": ""
+          }
+        },
+        "tab_T9YKCh": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "content": "<h1>🎯 Personalised sport shirt - Turquoise Fire Flame Men's Polo Shirt</h1><p>Elevate your sport game with Flastbat's Personalised dart shirts!  Add your name, team name, and even your logo to your shirt at absolutely no extra cost.  Crafted from breathable, quick-drying, and moisture-wicking fabric, our shirts will keep you cool and dry throughout your match, so you can focus on hitting that bullseye.  Choose Flastbat, and make your mark on and off the oche!</p><p><strong>Features and Benefits:</strong></p><ul><li><strong>Unique Customization:</strong> Add your name, team name, or custom logo at no additional cost for a truly unique look.</li><li><strong>Ultimate Performance</strong>: Breathable, quick-drying, and moisture-wicking fabric keeps you cool, dry, and comfortable throughout your game.</li><li><strong>Comfort and Functionality:</strong> Crafted from lightweight, UV-resistant fabric, this polo shirt ensures maximum comfort during any activity.</li><li><strong>Stylish and Practical:</strong> This shirt is a fusion of casual and athletic elements, making it versatile for various occasions. </li><li><strong>Easy Care:</strong> Machine washable at normal temperatures for hassle-free maintenance.</li></ul><p><strong>Additional Information:</strong></p><ul><li><strong>Colour Accuracy:</strong> Please note that the color representation on your screen may differ slightly from the actual color of the product.</li><li><strong>Sizing:</strong> We recommend checking our size chart, as our sizes may differ from other brands. Due to the custom nature of the shirt, returns for size issues are not possible.</li><li><strong>Shipping & Production:</strong> For orders under $79, the shipping cost is $5.95.</li><li><strong>The production</strong> of your personalized shirt takes approximately 2-3 business days (design, printing, cutting, and sewing). Delivery time is 12-15 business days after completion.</li></ul><p>With Flastbat, you're not just wearing a Sport Jersey – you're wearing a statement.</p><p><strong>Shop now and experience the difference for yourself</strong></p>",
+            "page": ""
+          }
+        },
         "description_PigjrR": {
           "type": "description",
           "settings": {
@@ -99,6 +113,8 @@
         "sales_point3",
         "tab_YptbEy",
         "tab_returns",
+        "size_chart_jYXNKT",
+        "tab_T9YKCh",
         "description_PigjrR"
       ],
       "settings": {
@@ -570,7 +586,7 @@
         "fullwidth": true,
         "slider_style": "classic",
         "height": 600,
-        "color": "#FFFFFF"
+        "color": "#ffffff"
       }
     },
     "advanced_content_XhTh94": {
