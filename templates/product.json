@@ -114,26 +114,17 @@
         "product_video_style": "unmuted"
       }
     },
-    "stiff-shoulders": {
-      "type": "text-and-image",
+    "scrolling_text_4JdKYk": {
+      "type": "scrolling-text",
+      "name": "t:labels.scrolling_text",
       "settings": {
-        "product_image_index": 0,
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "Stiff shoulders and tight back after work",
-        "heading_size": "h2",
-        "text": "<p>Use targeted red light heat and adjustable suction to melt away tension at home. Within minutes feel looser muscles, reduced stiffness, and less nightly pain so you can sleep and move more freely.</p>",
-        "button_label": "Get Mine Now",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "left",
-        "color_scheme": "none",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true
+        "text": "Free shipping and returns",
+        "link": "",
+        "text_size": 20,
+        "text_spacing": true,
+        "direction": "left",
+        "speed": 200,
+        "color_scheme": "1"
       }
     },
     "feel-calmer": {
@@ -210,28 +201,6 @@
       "settings": {
         "full_width": false,
         "space_around": true
-      }
-    },
-    "led-light": {
-      "type": "text-and-image",
-      "settings": {
-        "product_image_index": 2,
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "LED Red Light Heat Therapy",
-        "heading_size": "h2",
-        "text": "<p>Advanced 12V-5W LED red light technology penetrates deep into muscle tissue to stimulate circulation, reduce inflammation, and accelerate healing. Combined with 12 levels of heat and adjustable suction for complete therapy control.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "left",
-        "color_scheme": "none",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true
       }
     },
     "small-time-big-relief": {
@@ -580,14 +549,123 @@
       "settings": {
         "color_scheme": "none"
       }
+    },
+    "image_compare_UJxRWD": {
+      "type": "image-compare",
+      "blocks": {
+        "image_fxeqVK": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_fK4kBP": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_fxeqVK",
+        "image_fK4kBP"
+      ],
+      "name": "t:labels.image_comparison",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "fullwidth": true,
+        "slider_style": "classic",
+        "height": 600,
+        "color": "#FFFFFF"
+      }
+    },
+    "advanced_content_XhTh94": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_NHqCkp": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_Qyfpq6": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_NHqCkp",
+        "liquid_Qyfpq6"
+      ],
+      "name": "t:labels.custom_content",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "text_columns_PmKYkk": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_iyAXLK": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "text_block_4B8maT": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "text_block_WHQHq7": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_iyAXLK",
+        "text_block_4B8maT",
+        "text_block_WHQHq7"
+      ],
+      "name": "t:labels.text_columns_with",
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
     }
   },
   "order": [
     "main",
-    "stiff-shoulders",
+    "scrolling_text_4JdKYk",
     "feel-calmer",
     "comparison",
-    "led-light",
     "small-time-big-relief",
     "cordless-portable",
     "embarrassing-cellulite",
@@ -596,7 +674,10 @@
     "testimonials-main",
     "recommendations",
     "more-testimonials",
-    "recently-viewed",
-    "collection-return"
+    "collection-return",
+    "image_compare_UJxRWD",
+    "advanced_content_XhTh94",
+    "text_columns_PmKYkk",
+    "recently-viewed"
   ]
 }
