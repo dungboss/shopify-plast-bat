@@ -23,12 +23,6 @@
           "type": "price",
           "settings": {}
         },
-        "description_PigjrR": {
-          "type": "description",
-          "settings": {
-            "is_tab": false
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -86,12 +80,17 @@
             "content": "<p>We offer free returns within 30 days of purchase. If you're not completely satisfied with your GlowRelief Cupping Massager, contact us for a full refund — no questions asked.</p>",
             "page": ""
           }
+        },
+        "description_PigjrR": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
         }
       },
       "block_order": [
         "title",
         "price",
-        "description_PigjrR",
         "variant_picker",
         "quantity_selector_WnGzq4",
         "buy_buttons",
@@ -99,7 +98,8 @@
         "sales_point2",
         "sales_point3",
         "tab_YptbEy",
-        "tab_returns"
+        "tab_returns",
+        "description_PigjrR"
       ],
       "settings": {
         "image_position": "left",
