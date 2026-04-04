@@ -185,6 +185,21 @@
         "divider": false
       }
     },
+    "featured_collection_dXP8y9": {
+      "type": "featured-collection",
+      "name": "t:labels.featured_collection",
+      "settings": {
+        "title": "Billiard Collection",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "billiard-collection",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "newsletter_xAVptw": {
       "type": "newsletter",
       "blocks": {
@@ -445,6 +460,7 @@
     "slideshow_split_tn6mix",
     "featured-collections",
     "featured-collection",
+    "featured_collection_dXP8y9",
     "newsletter_xAVptw",
     "featured-collection2",
     "promo_grid_Rry3yj",
